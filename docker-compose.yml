@@ -3,7 +3,7 @@ services:
     build: .
     container_name: php_app
     ports:
-      - "8080:80"   # o 8081 si quieres otro puerto
+      - "8081:80"   # o 8081 si quieres otro puerto
     volumes:
       - ./src:/var/www/html
     depends_on:
