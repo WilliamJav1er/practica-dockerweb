@@ -1,11 +1,9 @@
-version: "3.8"
-
 services:
   web:
-    image: php:8.2-apache
+    build: .
     container_name: php_app
     ports:
-      - "8081:80"
+      - "8080:80"   # o 8081 si quieres otro puerto
     volumes:
       - ./src:/var/www/html
     depends_on:
